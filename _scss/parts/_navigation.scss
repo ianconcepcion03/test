@@ -1,0 +1,126 @@
+
+.main_nav {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 75px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px #00000017;
+  position: relative;
+  .container {
+    height: 100%;
+    align-items: center;
+  }
+  .branding {
+    a {
+      display: block;
+    }
+    .branding__logo {
+      min-width: 162px;
+    }
+  }
+  .navigation__container {
+    padding-left: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul.navmenu__list {
+      li.navmenu__item {
+        position: relative;
+        &.navmenu__item {
+          background-image: url(../../assets/images/Icon-metro-menu.svg);
+          background-repeat: no-repeat;
+          background-position: left center;
+          a {
+            padding-left: 18px;
+            &:hover {
+              opacity: .75;
+            }
+          }
+        }
+        a {
+          position: relative;
+          display: block;
+          text-transform: uppercase;
+          line-height: 1em;
+          font-size: 13px;
+          padding: 8px;
+          &:hover {
+            color: #000000;
+            text-decoration: none;
+          }
+        }
+        ul {
+          position: absolute;
+          display: none;
+        }
+      }
+      
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+    &.icon__twitter {
+      background-image: url(../../assets/images/Icon-awesome-twitter.svg);
+      width: 1.09rem;
+      height: 0.9rem;
+      background-size: 1.09rem;
+    }
+    &.icon__facebook {
+      background-image: url(../../assets/images/Icon-awesome-facebook-f.svg);
+      width: 0.7rem;
+      height: 1.1rem;
+      background-size: 0.54rem;
+    }
+    &.icon__rss {
+      background-image: url(../../assets/images/Icon-awesome-rss.svg);
+      width: 0.899375rem;
+      height: 0.899375rem;
+      background-size: 0.88rem;
+    }
+    &.icon__search {
+      background-image: url(../../assets/images/SEARCH_ICON.svg);
+      width: 1.070625rem;
+      height: 1.070625rem;
+      background-size: 1.070625rem;
+      pointer-events: none;
+    }
+}
+
+.social__media {
+  ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 4px;
+    li {
+      font-size: 0;
+      margin: 0 4px;
+      a {
+        display: block;
+        padding: 4px;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+    .inkednotes__search {
+      padding-left: 18px;
+      margin-left: 18px;
+      border-left: 1px solid #DFDFDF;
+      &.inkednotes__search--open {
+        .icon.icon__search {
+          background-image: url(../../assets/images/Icon-ionic-ios-close.svg);
+          background-size: 1.03rem;
+        }
+      }
+    }
+  }
+}

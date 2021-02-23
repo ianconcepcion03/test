@@ -1,0 +1,18 @@
+footer {
+  background-color: #191C1E;
+  height: 77px;
+  .container {
+    height: 100%;
+    .footer__details {
+      display: flex;
+      align-items: center;
+      color: #CCCCCC;
+      width: 100%;
+      justify-content: space-between;
+      .footer__copyright {
+        font-size: 14px;
+        color: #CCCCCC;
+      }
+    }
+  }
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>Inkednotes - Share your ideas to The New Normal</title>
+
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body style="background-color: #F4F6F6;">
+  
+  <div id="app">
+    <nav class="main_nav">
+      <div class="container">
+        <div class="branding">
+          <a href="index.html">
+            <picture>
+              <source 
+                srcset="./assets/images/icon-inkednotes.png"
+                type="image/png"
+                media="all and (max-width: 480px)"
+              />
+  
+              <img class="branding__logo" src="./assets/images/logo.svg" alt="Logo">
+            </picture>
+          </a>
+        </div>
+    
+        <div class="navigation__container">
+          <nav class="navmenu">
+            <ul class="navmenu__list">
+              <li class="navmenu__item"><a href="#" class="toggle__categories">Browse</a></li>
+            </ul>
+          </nav>
+  
+          <div class="social__media">
+            <ul>
+              <li><a href="#"><i class="icon icon__twitter"></i></a></li>
+              <li><a href="#"><i class="icon icon__facebook"></i></a></li>
+              <li><a href="#"><i class="icon icon__rss"></i></a></li>
+              <li class="inkednotes__search"><a href="#" id="inkednotes__search"><i class="icon icon__search"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="search" id="search">
+      <div class="container">
+        <form action="?">
+          <input class="search__input" type="search" id="s" value="" placeholder="Search..." name="s" autofocus>
+          <button type="submit" class="btn btn__search">search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="container">
+        <div class="header__img">
+          <img id="img" class="blur" src="./assets/images/new_normal_sm.jpg" alt="header img">
+          <!-- <img src="./assets/images/new_normal-min.jpg" alt="header img"> -->
+        </div>
+
+        <div class="header__caption">
+          <h1>Share your Ideas to <strong>The New Normal</strong></h1>
+        </div>
+      </div>
+    </div>
+  
+    <div class="categories">
+      <h5>CONTENT <small>by</small> CATEGORY</h5>
+      <div class="categories__list">
+        <ul>
+          <li><a href="#">inspiration</a></li>
+          <li><a href="#">design</a></li>
+          <li><a href="#">css</a></li>
+          <li><a href="#">html</a></li>
+          <li><a href="#">vue.js</a></li>
+          <li><a href="#">react.js</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <section>
+      <div class="container">
+        <div class="grid-wrapper">
+  
+          <div class="card">
+            <div class="card__img">
+              <img src="./assets/images/flexbox-centering.jpg" alt="Image">
+            </div>
+            <div class="card__content">
+              <div class="card__tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.591" height="10.591" viewBox="0 0 10.591 10.591">
+                  <path id="Icon_awesome-tag" data-name="Icon awesome-tag" d="M0,5.215V.993A.993.993,0,0,1,.993,0H5.215a.993.993,0,0,1,.7.291L10.3,4.674a.993.993,0,0,1,0,1.4L6.078,10.3a.993.993,0,0,1-1.4,0L.291,5.917A.993.993,0,0,1,0,5.215ZM2.317,1.324a.993.993,0,1,0,.993.993A.993.993,0,0,0,2.317,1.324Z" fill="#b0b0b0"/>
+                </svg>
+                <span>
+                  <a href="#">css,</a>
+                  <a href="#">javascript,</a>
+                  <a href="#">html</a>
+                </span>
+              </div>
+              <h2 class="card__title"><a href="#">15 Amazing CSS Web Design Galleries</a></h2>
+              <p class="card__description">This week’s Designer News – № 577 – includes The State of Design in 2021, VISIWIG Vector Pattern Generator, On-Scroll Letter Animations, A Comprehensive List of UX Design Methods & Deliverables, How to Code SVG Icons by Hand, Flexbox-Guide and tons more!</p>
+
+              <div class="card__author">
+                <span>Ian Concepcion</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card__img">
+              <img src="./assets/images/flexbox-centering1.jpg" alt="Image">
+            </div>
+            <div class="card__content">
+              <div class="card__tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.591" height="10.591" viewBox="0 0 10.591 10.591">
+                  <path id="Icon_awesome-tag" data-name="Icon awesome-tag" d="M0,5.215V.993A.993.993,0,0,1,.993,0H5.215a.993.993,0,0,1,.7.291L10.3,4.674a.993.993,0,0,1,0,1.4L6.078,10.3a.993.993,0,0,1-1.4,0L.291,5.917A.993.993,0,0,1,0,5.215ZM2.317,1.324a.993.993,0,1,0,.993.993A.993.993,0,0,0,2.317,1.324Z" fill="#b0b0b0"/>
+                </svg>
+                <span>
+                  <a href="#">css,</a>
+                  <a href="#">javascript,</a>
+                  <a href="#">html</a>
+                </span>
+              </div>
+              <h2 class="card__title"><a href="#">15 Amazing CSS Web Design Galleries</a></h2>
+              <p class="card__description">This week’s Designer News – № 577 – includes The State of Design in 2021, VISIWIG Vector Pattern Generator, On-Scroll Letter Animations, A Comprehensive List of UX Design Methods & Deliverables, How to Code SVG Icons by Hand, Flexbox-Guide and tons more!</p>
+
+              <div class="card__author">
+                <span>Analyn Concepcion</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card__img">
+              <img src="./assets/images/flexbox-centering2.jpg" alt="Image">
+            </div>
+            <div class="card__content">
+              <div class="card__tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.591" height="10.591" viewBox="0 0 10.591 10.591">
+                  <path id="Icon_awesome-tag" data-name="Icon awesome-tag" d="M0,5.215V.993A.993.993,0,0,1,.993,0H5.215a.993.993,0,0,1,.7.291L10.3,4.674a.993.993,0,0,1,0,1.4L6.078,10.3a.993.993,0,0,1-1.4,0L.291,5.917A.993.993,0,0,1,0,5.215ZM2.317,1.324a.993.993,0,1,0,.993.993A.993.993,0,0,0,2.317,1.324Z" fill="#b0b0b0"/>
+                </svg>
+                <span>
+                  <a href="#">css,</a>
+                  <a href="#">javascript,</a>
+                  <a href="#">html</a>
+                </span>
+              </div>
+              <h2 class="card__title"><a href="#">15 Amazing CSS Web Design Galleries</a></h2>
+              <p class="card__description">This week’s Designer News – № 577 – includes The State of Design in 2021, VISIWIG Vector Pattern Generator, On-Scroll Letter Animations, A Comprehensive List of UX Design Methods & Deliverables, How to Code SVG Icons by Hand, Flexbox-Guide and tons more!</p>
+
+              <div class="card__author">
+                <span>Ian Concepcion</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card__img">
+              <img src="./assets/images/flexbox-centering2.jpg" alt="Image">
+            </div>
+            <div class="card__content">
+              <div class="card__tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.591" height="10.591" viewBox="0 0 10.591 10.591">
+                  <path id="Icon_awesome-tag" data-name="Icon awesome-tag" d="M0,5.215V.993A.993.993,0,0,1,.993,0H5.215a.993.993,0,0,1,.7.291L10.3,4.674a.993.993,0,0,1,0,1.4L6.078,10.3a.993.993,0,0,1-1.4,0L.291,5.917A.993.993,0,0,1,0,5.215ZM2.317,1.324a.993.993,0,1,0,.993.993A.993.993,0,0,0,2.317,1.324Z" fill="#b0b0b0"/>
+                </svg>
+                <span>
+                  <a href="#">css,</a>
+                  <a href="#">javascript,</a>
+                  <a href="#">html</a>
+                </span>
+              </div>
+              <h2 class="card__title"><a href="#">15 Amazing CSS Web Design Galleries</a></h2>
+              <p class="card__description">This week’s Designer News – № 577 – includes The State of Design in 2021, VISIWIG Vector Pattern Generator, On-Scroll Letter Animations, A Comprehensive List of UX Design Methods & Deliverables, How to Code SVG Icons by Hand, Flexbox-Guide and tons more!</p>
+
+              <div class="card__author">
+                <span>Ian Concepcion</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card__img">
+              <img src="./assets/images/flexbox-centering1.jpg" alt="Image">
+            </div>
+            <div class="card__content">
+              <div class="card__tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.591" height="10.591" viewBox="0 0 10.591 10.591">
+                  <path id="Icon_awesome-tag" data-name="Icon awesome-tag" d="M0,5.215V.993A.993.993,0,0,1,.993,0H5.215a.993.993,0,0,1,.7.291L10.3,4.674a.993.993,0,0,1,0,1.4L6.078,10.3a.993.993,0,0,1-1.4,0L.291,5.917A.993.993,0,0,1,0,5.215ZM2.317,1.324a.993.993,0,1,0,.993.993A.993.993,0,0,0,2.317,1.324Z" fill="#b0b0b0"/>
+                </svg>
+                <span>
+                  <a href="#">css,</a>
+                  <a href="#">javascript,</a>
+                  <a href="#">html</a>
+                </span>
+              </div>
+              <h2 class="card__title"><a href="#">15 Amazing CSS Web Design Galleries</a></h2>
+              <p class="card__description">This week’s Designer News – № 577 – includes The State of Design in 2021, VISIWIG Vector Pattern Generator, On-Scroll Letter Animations, A Comprehensive List of UX Design Methods & Deliverables, How to Code SVG Icons by Hand, Flexbox-Guide and tons more!</p>
+
+              <div class="card__author">
+                <span>Ian Concepcion</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card__img">
+              <img src="./assets/images/flexbox-centering.jpg" alt="Image">
+            </div>
+            <div class="card__content">
+              <div class="card__tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.591" height="10.591" viewBox="0 0 10.591 10.591">
+                  <path id="Icon_awesome-tag" data-name="Icon awesome-tag" d="M0,5.215V.993A.993.993,0,0,1,.993,0H5.215a.993.993,0,0,1,.7.291L10.3,4.674a.993.993,0,0,1,0,1.4L6.078,10.3a.993.993,0,0,1-1.4,0L.291,5.917A.993.993,0,0,1,0,5.215ZM2.317,1.324a.993.993,0,1,0,.993.993A.993.993,0,0,0,2.317,1.324Z" fill="#b0b0b0"/>
+                </svg>
+                <span>
+                  <a href="#">css,</a>
+                  <a href="#">javascript,</a>
+                  <a href="#">html</a>
+                </span>
+              </div>
+              <h2 class="card__title"><a href="#">15 Amazing CSS Web Design Galleries</a></h2>
+              <p class="card__description">This week’s Designer News – № 577 – includes The State of Design in 2021, VISIWIG Vector Pattern Generator, On-Scroll Letter Animations, A Comprehensive List of UX Design Methods & Deliverables, How to Code SVG Icons by Hand, Flexbox-Guide and tons more!</p>
+
+              <div class="card__author">
+                <span>Ian Concepcion</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card__img">
+              <img src="./assets/images/flexbox-centering2.jpg" alt="Image">
+            </div>
+            <div class="card__content">
+              <div class="card__tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.591" height="10.591" viewBox="0 0 10.591 10.591">
+                  <path id="Icon_awesome-tag" data-name="Icon awesome-tag" d="M0,5.215V.993A.993.993,0,0,1,.993,0H5.215a.993.993,0,0,1,.7.291L10.3,4.674a.993.993,0,0,1,0,1.4L6.078,10.3a.993.993,0,0,1-1.4,0L.291,5.917A.993.993,0,0,1,0,5.215ZM2.317,1.324a.993.993,0,1,0,.993.993A.993.993,0,0,0,2.317,1.324Z" fill="#b0b0b0"/>
+                </svg>
+                <span>
+                  <a href="#">css,</a>
+                  <a href="#">javascript,</a>
+                  <a href="#">html</a>
+                </span>
+              </div>
+              <h2 class="card__title"><a href="#">15 Amazing CSS Web Design Galleries</a></h2>
+              <p class="card__description">This week’s Designer News – № 577 – includes The State of Design in 2021, VISIWIG Vector Pattern Generator, On-Scroll Letter Animations, A Comprehensive List of UX Design Methods & Deliverables, How to Code SVG Icons by Hand, Flexbox-Guide and tons more!</p>
+
+              <div class="card__author">
+                <span>Ian Concepcion</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card__img">
+              <img src="./assets/images/flexbox-centering1.jpg" alt="Image">
+            </div>
+            <div class="card__content">
+              <div class="card__tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.591" height="10.591" viewBox="0 0 10.591 10.591">
+                  <path id="Icon_awesome-tag" data-name="Icon awesome-tag" d="M0,5.215V.993A.993.993,0,0,1,.993,0H5.215a.993.993,0,0,1,.7.291L10.3,4.674a.993.993,0,0,1,0,1.4L6.078,10.3a.993.993,0,0,1-1.4,0L.291,5.917A.993.993,0,0,1,0,5.215ZM2.317,1.324a.993.993,0,1,0,.993.993A.993.993,0,0,0,2.317,1.324Z" fill="#b0b0b0"/>
+                </svg>
+                <span>
+                  <a href="#">css,</a>
+                  <a href="#">javascript,</a>
+                  <a href="#">html</a>
+                </span>
+              </div>
+              <h2 class="card__title"><a href="#">15 Amazing CSS Web Design Galleries</a></h2>
+              <p class="card__description">This week’s Designer News – № 577 – includes The State of Design in 2021, VISIWIG Vector Pattern Generator, On-Scroll Letter Animations, A Comprehensive List of UX Design Methods & Deliverables, How to Code SVG Icons by Hand, Flexbox-Guide and tons more!</p>
+
+              <div class="card__author">
+                <span>Ian Concepcion</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card__img">
+              <img src="./assets/images/flexbox-centering.jpg" alt="Image">
+            </div>
+            <div class="card__content">
+              <div class="card__tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.591" height="10.591" viewBox="0 0 10.591 10.591">
+                  <path id="Icon_awesome-tag" data-name="Icon awesome-tag" d="M0,5.215V.993A.993.993,0,0,1,.993,0H5.215a.993.993,0,0,1,.7.291L10.3,4.674a.993.993,0,0,1,0,1.4L6.078,10.3a.993.993,0,0,1-1.4,0L.291,5.917A.993.993,0,0,1,0,5.215ZM2.317,1.324a.993.993,0,1,0,.993.993A.993.993,0,0,0,2.317,1.324Z" fill="#b0b0b0"/>
+                </svg>
+                <span>
+                  <a href="#">css,</a>
+                  <a href="#">javascript,</a>
+                  <a href="#">html</a>
+                </span>
+              </div>
+              <h2 class="card__title"><a href="#">15 Amazing CSS Web Design Galleries</a></h2>
+              <p class="card__description">This week’s Designer News – № 577 – includes The State of Design in 2021, VISIWIG Vector Pattern Generator, On-Scroll Letter Animations, A Comprehensive List of UX Design Methods & Deliverables, How to Code SVG Icons by Hand, Flexbox-Guide and tons more!</p>
+
+              <div class="card__author">
+                <span>Ian Concepcion</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="pagination">
+          <div class="pagionation__list">
+            <a href="#" class="prev page-numbers">Previous</a>
+            <a href="#" class="current page-numbers">1</a>
+            <a href="#" class="page-numbers">2</a>
+            <a href="#" class="page-numbers">3</a>
+            <span class="dots page-numbers">…</span>
+            <a href="#" class="page-numbers">6</a>
+            <a href="#" class="next page-numbers">Next</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="newsletter">
+          <div class="newletter__content">
+            <h3 class="newsletter__title">
+              Keep up to date with inkednotes — sign up for our newsletter and stay informed.
+            </h3>
+            <div class="form__group">
+              <form action="?">
+                <input type="email" class="form" placeholder="Your email address">
+                <button type="submit" class="btn__default">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer__details">
+          <div class="footer__logo">
+            <img class="branding__logo" src="./assets/images/white-logo.svg" alt="Logo">
+          </div>
+
+          <div class="footer__copyright">
+            Inkednotes. &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+  
+  <script src="./assets/js/scripts.js"></script>
+
+  <script>
+    var blurimg = document.getElementById('img');
+    var bigImg = document.createElement('img');
+
+    bigImg.onload = function() {
+      blurimg.src = this.src;
+      blurimg.className = 'noblur';
+    }
+
+    setTimeout(() => {
+      bigImg.src = './assets/images/new_normal-min.jpg'
+    }, 50);
+
+    console.log(bigImg)
+  </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>Inkednotes - Share your ideas to The New Normal</title>
+
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/prism.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body style="background-color: #F4F6F6;">
+  
+  <div id="app">
+    <nav class="main_nav">
+      <div class="container">
+        <div class="branding">
+          <a href="index.html">
+            <picture>
+              <source 
+                srcset="./assets/images/icon-inkednotes.png"
+                type="image/png"
+                media="all and (max-width: 480px)"
+              />
+  
+              <img class="branding__logo" src="./assets/images/logo.svg" alt="Logo">
+            </picture>
+          </a>
+        </div>
+    
+        <div class="navigation__container">
+          <nav class="navmenu">
+            <ul class="navmenu__list">
+              <li class="navmenu__item"><a href="#" class="toggle__categories">Browse</a></li>
+            </ul>
+          </nav>
+  
+          <div class="social__media">
+            <ul>
+              <li><a href="#"><i class="icon icon__twitter"></i></a></li>
+              <li><a href="#"><i class="icon icon__facebook"></i></a></li>
+              <li><a href="#"><i class="icon icon__rss"></i></a></li>
+              <li class="inkednotes__search"><a href="#" id="inkednotes__search"><i class="icon icon__search"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="search" id="search">
+      <div class="container">
+        <form action="?">
+          <input class="search__input" type="search" id="s" value="" placeholder="Search..." name="s" autofocus>
+          <button type="submit" class="btn btn__search">search</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="categories">
+      <h5>CONTENT <small>by</small> CATEGORY</h5>
+      <div class="categories__list">
+        <ul>
+          <li><a href="#">inspiration</a></li>
+          <li><a href="#">design</a></li>
+          <li><a href="#">css</a></li>
+          <li><a href="#">html</a></li>
+          <li><a href="#">vue.js</a></li>
+          <li><a href="#">react.js</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="single">
+      <div class="container">
+
+        <pre class="language-css">
+          <code class="language-css">
+  /* PrismJS 1.23.0
+  https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
+  /**
+  * prism.js default theme for JavaScript, CSS and HTML
+  * Based on dabblet (http://dabblet.com)
+  * @author Lea Verou
+  */
+  
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: black;
+    background: none;
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  </code>
+        </pre>
+
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="pagination">
+          <div class="pagionation__list">
+            <a href="#" class="prev page-numbers">Previous</a>
+            <a href="#" class="current page-numbers">1</a>
+            <a href="#" class="page-numbers">2</a>
+            <a href="#" class="page-numbers">3</a>
+            <span class="dots page-numbers">…</span>
+            <a href="#" class="page-numbers">6</a>
+            <a href="#" class="next page-numbers">Next</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="newsletter">
+          <div class="newletter__content">
+            <h3 class="newsletter__title">
+              Keep up to date with inkednotes — sign up for our newsletter and stay informed.
+            </h3>
+            <div class="form__group">
+              <form action="?">
+                <input type="email" class="form" placeholder="Your email address">
+                <button type="submit" class="btn__default">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer__details">
+          <div class="footer__logo">
+            <img class="branding__logo" src="./assets/images/white-logo.svg" alt="Logo">
+          </div>
+
+          <div class="footer__copyright">
+            Inkednotes. &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+  
+  <script src="./assets/js/scripts.js"></script>
+  <script src="./assets/js/prism.js"></script>
+</body>
+</html>
